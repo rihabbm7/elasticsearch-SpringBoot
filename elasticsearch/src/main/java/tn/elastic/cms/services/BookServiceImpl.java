@@ -36,9 +36,9 @@ public class BookServiceImpl implements BookService{
         return bookRepository.findAll();
     }
 
-    public Page<Book> findByAuthor(String author, PageRequest pageRequest) {
-        return bookRepository.findByAuthor(author, pageRequest);
-    }
+//    public Page<Book> findByAuthor(String author, PageRequest pageRequest) {
+//        return bookRepository.findByAuthor(author, pageRequest);
+//    }
 
     public List<Book> findByTitle(String title) {
         return bookRepository.findByTitle(title);

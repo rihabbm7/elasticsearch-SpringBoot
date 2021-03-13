@@ -8,7 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import tn.elastic.cms.model.Book;
 
 public interface BookService {
-	 Book save(Book book);
+	 	Book save(Book book);
 
 	    void delete(Book book);
 
@@ -16,7 +16,7 @@ public interface BookService {
 
 	    Iterable<Book> findAll();
 
-	    Page<Book> findByAuthor(String author, PageRequest pageRequest);
+	   // Page<Book> findByAuthor(String author, PageRequest pageRequest);
 
 	    List<Book> findByTitle(String title);
 

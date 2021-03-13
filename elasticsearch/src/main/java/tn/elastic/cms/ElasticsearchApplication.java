@@ -1,5 +1,6 @@
 package tn.elastic.cms;
 
+import java.util.List;
 import java.util.Map;
 
 import org.elasticsearch.client.Client;
@@ -33,9 +34,9 @@ public class ElasticsearchApplication implements CommandLineRunner{
 	        bookService.save(new Book("1003", "Apache Solr Basics", "Rambabu Posa", "21-MAR-2017"));
 
 	        //fuzzey search
-	        Page<Book> books = bookService.findByAuthor("Rambabu",PageRequest.of(0, 10));
+	       // Page<Book> books = bookService.findByAuthor("Rambabu",PageRequest.of(0, 10));
 
-	        //List<Book> books = bookService.findByTitle("Elasticsearch Basics");
+	        List<Book> books = bookService.findByTitle("Elasticsearch Basics");
 
 	        books.forEach(x -> System.out.println(x));
 
